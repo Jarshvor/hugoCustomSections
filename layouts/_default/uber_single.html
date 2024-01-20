@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div>
+  <main>
+    {{ partial "article" . }}
+	<br>
+	{{ partial (printf "%s/footer" .Section) . }}
+  </main>
+</div>
+{{ end }}
